@@ -1,0 +1,16 @@
+[package]
+name = "mnist-candle"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+accelerate-src = {version = "0.3.2", optional = true}
+anyhow = "1.0.75"
+candle-core = { git = "https://github.com/huggingface/candle.git", branch = "main" }
+candle-nn = { git = "https://github.com/huggingface/candle.git", branch = "main" }
+image = "0.24.7"
+rand = "0.8.5"
+
+[features]
+default = []
+
